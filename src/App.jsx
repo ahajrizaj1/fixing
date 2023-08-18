@@ -1,16 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.scss";
+import Cards from "./components/First/Cards";
+import FirstTask from "./components/First/FirstTask";
+import MultiToggle from "./components/Second/MultiToggle";
+import ReactTabs from "./components/Second/ReactTabs";
+import TogglePop from "./components/Second/TogglePop";
+import ModalBase from "./components/Third/ModalBase";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div>
-      Hello
+    <div className="app">
+      <FirstTask />
+      <Cards />
+      <ReactTabs />
+      <TogglePop />
+      <MultiToggle />
+      <ModalBase />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
